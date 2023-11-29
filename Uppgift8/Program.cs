@@ -10,6 +10,22 @@ namespace Uppgift8
     {
         static void Main(string[] args)
         {
+            int antal = int.Parse(Console.ReadLine());
+            int[] pris = new int [antal];
+            int minstaPris = 0;
+            int gratisBöcker = antal / 3;
+            for (int i = 0; i < antal; i++) 
+            {
+                pris[i] = int.Parse(Console.ReadLine());
+            }
+            Array.Sort(pris);
+            for (int j=(gratisBöcker);j<antal; j++)
+            {
+                minstaPris += pris[j];
+            }
+
+            Console.WriteLine(minstaPris.ToString());
+            Console.ReadKey();  
         }
     }
 }
