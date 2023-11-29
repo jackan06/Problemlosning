@@ -18,7 +18,9 @@ namespace Uppgift8
             {
                 pris[i] = int.Parse(Console.ReadLine());
             }
+            
             Array.Sort(pris);
+
             for (int j=(gratisBöcker);j<antal; j++)
             {
                 minstaPris += pris[j];
